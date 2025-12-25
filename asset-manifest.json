@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.e0cfcc94.css",
-    "main.js": "/my-portfolio/static/js/main.91a76852.js",
+    "main.js": "/my-portfolio/static/js/main.a979fbb8.js",
     "static/css/64.bba8fa55.chunk.css": "/my-portfolio/static/css/64.bba8fa55.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/my-portfolio/static/js/64.56dc6704.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/my-portfolio/static/css/769.b3cbb36b.chunk.css",
     "static/js/769.bda0d7b7.chunk.js": "/my-portfolio/static/js/769.bda0d7b7.chunk.js",
     "static/media/Tata_logo.png": "/my-portfolio/static/media/Tata_logo.5bb4836203e3dd1e2d89.png",
     "static/media/Montserrat-Regular.ttf": "/my-portfolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
-    "static/media/resume.pdf": "/my-portfolio/static/media/resume.e62044886dbefe553cad.pdf",
+    "static/media/resume.pdf": "/my-portfolio/static/media/resume.85672678392bfa148a89.pdf",
     "static/media/sppu.png": "/my-portfolio/static/media/sppu.30129a9985488fb1ace4.png",
     "static/media/Agustina.woff": "/my-portfolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "static/media/mmcc.png": "/my-portfolio/static/media/mmcc.8b8d14d6c9030cdfd889.png",
@@ -21,7 +21,7 @@
     "index.html": "/my-portfolio/index.html",
     "static/media/talksCardBack.svg": "/my-portfolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.e0cfcc94.css.map": "/my-portfolio/static/css/main.e0cfcc94.css.map",
-    "main.91a76852.js.map": "/my-portfolio/static/js/main.91a76852.js.map",
+    "main.a979fbb8.js.map": "/my-portfolio/static/js/main.a979fbb8.js.map",
     "64.bba8fa55.chunk.css.map": "/my-portfolio/static/css/64.bba8fa55.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/my-portfolio/static/js/64.56dc6704.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/my-portfolio/static/css/769.b3cbb36b.chunk.css.map",
@@ -29,6 +29,6 @@
   },
   "entrypoints": [
     "static/css/main.e0cfcc94.css",
-    "static/js/main.91a76852.js"
+    "static/js/main.a979fbb8.js"
   ]
 }
