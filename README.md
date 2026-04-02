@@ -1,11 +1,11 @@
-# Software Developer Folio ⚡️ [![GitHub](https://img.shields.io/github/license/saadpasta/developer-portfolio?color=blue)](https://github.com/saadpasta/developerFolio/blob/master/LICENSE) [![GitHub stars](https://img.shields.io/github/stars/saadpasta/developerFolio)](https://github.com/saadpasta/developerFolio/stargazers)  [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
+
 
 ## A clean, beautiful and responsive portfolio template for Developers!
 
 
 <p align="center">
   <kbd>
-<img src="https://user-images.githubusercontent.com/53429438/106779355-e9cd9e80-666c-11eb-9417-8a4b54441bc6.gif"></img>
+<img src="iamge  "></img>
   </kbd>
 </p>
 
@@ -44,7 +44,7 @@ Created something awesome for your fork of the portfolio and want to share it? F
 ✔️ Twitter Timeline\
 ✔️ GitHub Profile
 
-To view a live example, **[click here](https://developerfolio.js.org/)**.
+To view a live example, **[click here]([https://developerfolio.js.org/](https://bot0024.github.io/my-portfolio/))**.
 
 
 ## Getting Started
@@ -155,18 +155,16 @@ Set `displayMediumBlogs` to true or false in portofolio.js to display fetched Me
 
 const greeting = {
   /* Your Summary And Greeting Section */
-  title: "Hi all I'm Saad",
-  subTitle: emoji("A passionate Full Stack Software Developer 🚀"),
+  title: "Hi all I'm bot",
+  subTitle: emoji("A passionate Soc Analyst🚀"),
   resumeLink: "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing"
 };
 
 const socialMediaLinks = {
   /* Your Social Media Link */
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7"
+  github: "https://github.com/bot0024",
+  linkedin: "https://www.linkedin.com/in/dip-nalawade/",
+  gmail: "dipnalawade24@gmail.com",
 };
 
 
