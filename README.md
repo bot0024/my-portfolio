@@ -2,8 +2,8 @@
 
 ## A clean, beautiful and responsive portfolio template for Developers!
 
-
-<p align="center">
+(https://bot0024.github.io/my-portfolio/)
+<p align="center"> 
   <kbd>
 <img src="iamge  "></img>
   </kbd>
@@ -44,7 +44,7 @@ Created something awesome for your fork of the portfolio and want to share it? F
 ✔️ Twitter Timeline\
 ✔️ GitHub Profile
 
-To view a live example, **[click here]([https://developerfolio.js.org/](https://bot0024.github.io/my-portfolio/))**.
+To view a live example, **[click here]([https://bot0024.github.io/my-portfolio/])**.
 
 
 ## Getting Started
