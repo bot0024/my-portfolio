@@ -12,9 +12,6 @@
 
 Just change `src/portfolio.js` to get your personal portfolio. Customize portfolio theme by using your own color scheme globally in the  `src/_globalColor.scss` file. Feel free to use it as-is or personalize it as much as you want.
 
-If you'd like to **contribute** and make this much better for other users, have a look at [Issues](https://github.com/saadpasta/developerFolio/issues).
-
-Created something awesome for your fork of the portfolio and want to share it? Feel free to open a [pull request](https://github.com/saadpasta/developerFolio/pulls).
 
 ## Table of Contents
 - [Sections](#sections)
@@ -44,7 +41,7 @@ Created something awesome for your fork of the portfolio and want to share it? F
 ✔️ Twitter Timeline\
 ✔️ GitHub Profile
 
-To view a live example, **[click here]([https://bot0024.github.io/my-portfolio/])**.
+To view a live example, **[click here]([https://bot0024.github.io/my-portfolio/](https://bot0024.github.io/my-portfolio/)**.
 
 
 ## Getting Started
