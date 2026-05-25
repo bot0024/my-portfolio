@@ -52,10 +52,10 @@ const skillsSection = {
   subTitle: "SECURING THE DIGITAL WORLD, ONE LAYER AT A TIME ",
   skills: [
     emoji("⚔️ SIEM Concepts: Event Correlation, Log Monitoring, Alert Prioritization"),
-    emoji("⚔️ Networking: TCP/IP, Firewalls, IDS/IPS Basics"),
+    emoji("⚔️ Networking: TCP/IP, Firewalls, IDS/IPS "),
     emoji("⚔️ Phishing Analysis: email analysis, URL analysis, attachment analysis"),
     emoji("⚔️ Operating Systems: Windows, Linux (Kali, Ubuntu)"),
-    emoji("⚔️ Security Tools: Wireshark, Nmap, Splunk (basic), Nessus(basics),etc"),
+    emoji("⚔️ Security Tools: Splunk, Wireshark, Nmap, Nessus(basics),etc"),
     emoji("⚔️ Soft Skills: Critical Thinking, Communication, Time Management, Teamwork")
   ],
 
@@ -66,6 +66,10 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "Splunk",
       iconPath: "https://www.cprime.com/wp-content/uploads/2020/10/splunk-logo-150x150.jpg"
+    },
+    {
+      skillName: "OpnSense",
+      iconPath: "https://opnsense.org/wp-content/themes/template/assets/images/logo-opnsense.svg"
     },
     {
       skillName: "Elastic Stack",
@@ -217,6 +221,18 @@ const bigProjects = {
         {
           name: "Visit Report",
           url: "https://github.com/bot0024/Project-Global-Threat-Intelligence-Analysis-using-Cloud-Based-Honeypots"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/socc.jpg"),
+      projectName: "Home Lab — SOC Threat Detection & Incident Response",
+      projectDesc: "Design and Implementation of a Cybersecurity Home Lab for Threat Detection, Analysis, and  Incident Response Using Open-Source Security Tools ",
+      footerLink: [
+        {
+          name: "Visit Report",
+          url: "https://github.com/bot0024/soc-lab-opensoure"
         }
         //  you can add extra buttons here.
       ]
