@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description"
+    content="Dip Nalawade — cybersecurity portfolio featuring SOC automation, security monitoring, and hands-on lab projects." />
+  <title>Dip Nalawade | Cybersecurity Portfolio</title>
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Dip Nalawade | Cybersecurity Portfolio" />
+  <meta property="og:description" content="Cybersecurity graduate focused on SOC operations, security monitoring, and response automation." />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231d4ed8'/%3E%3Ctext x='32' y='44' font-size='36' font-family='monospace' font-weight='700' text-anchor='middle' fill='white'%3ED.%3C/text%3E%3C/svg%3E" />
+
+  <!-- Prevent flash of incorrect theme before DOM renders -->
+  <script>
+    try {
+      if (localStorage.getItem('dip-portfolio-theme') === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        document.querySelector('meta[name="theme-color"]')?.setAttribute('content', '#000000');
+      }
+    } catch (_) { }
+  </script>
+
+  <!-- Typography: IBM Plex Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Master Stylesheet (Design tokens, layout, themes, and animations) -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Top Reading Scroll Progress Bar -->
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <div class="site-shell">
+    <!-- =============================================================== -->
+    <!-- HEADER & NAVIGATION                                             -->
+    <!-- =============================================================== -->
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Dip Nalawade home">
+        <span class="brand-mark">D<span>.</span></span>
+        <span>DIP NALAWADE</span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#blog">Blog</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a class="nav-resume" href="#resume">Resume <span>↓</span></a>
+        <a class="nav-contact" href="#contact">Let's talk <span>↗</span></a>
+      </nav>
+
+      <!-- Light / Dark Theme Switcher -->
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false"
+        title="Switch to dark mode">
+        <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M20.3 15.4A8.7 8.7 0 0 1 8.6 3.7 8.9 8.9 0 1 0 20.3 15.4Z" fill="none" stroke="currentColor"
+            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8" />
+          <path
+            d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"
+            fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+        </svg>
+      </button>
+    </header>
+
+    <main>
+      <!-- ============================================================= -->
+      <!-- 00 / HERO SECTION                                             -->
+      <!-- ============================================================= -->
+      <section class="hero section" id="home">
+        <div class="hero-copy">
+          <div class="eyebrow">Hello! 👋</div>
+          <p class="hero-kicker">
+            <span class="role-prefix">CYBERSECURITY</span>
+            <span class="role-divider" aria-hidden="true">/</span>
+            <span id="role-text" class="role-text">SOC operations</span>
+            <span class="type-caret" aria-hidden="true"></span>
+          </p>
+          <h1>I’m Dip <span class="accent name-accent">Nalawade</span></h1>
+          <p class="hero-intro" id="hero-intro">I’m a cybersecurity graduate focused on security monitoring, investigation, and response
+            automation. I learn by building practical labs and documenting what I discover.</p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore my work <span>↘</span></a>
+            <a class="text-link" href="#contact">Get in touch <span>↗</span></a>
+          </div>
+
+          <div class="hero-meta" id="hero-meta">
+            <div><strong>01</strong><span>Hands-on labs</span></div>
+            <div><strong>02</strong><span>Security automation</span></div>
+            <div><strong>03</strong><span>Always learning</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="visual-grid"></div>
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="core-shield">
+            <svg viewBox="0 0 100 112" role="img" aria-label="Shield icon">
+              <path d="M50 5 88 20v29c0 27-16 46-38 58C28 95 12 76 12 49V20L50 5Z" fill="none" stroke="currentColor"
+                stroke-width="2.5" />
+              <path d="m32 55 12 12 25-27" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </div>
+          <div class="float-card card-alert">
+            <span class="mini-icon">↗</span>
+            <div>
+              <small>RESPONSE WORKFLOW</small>
+              <strong>Automated triage</strong>
+            </div>
+            <span class="pill">ACTIVE</span>
+          </div>
+          <div class="float-card card-log">
+            <span class="log-icon">⌘</span>
+            <div>
+              <small>SECURITY TELEMETRY</small>
+              <strong>Events → Signals</strong>
+            </div>
+          </div>
+          <div class="visual-caption">
+            <span class="caption-line"></span>
+            <span>DETECT · INVESTIGATE · RESPOND</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Keyword Ticker -->
+      <div class="ticker" id="ticker" aria-label="Areas of interest">
+        <span>SIEM</span><i>✳</i>
+        <span>INCIDENT RESPONSE</span><i>✳</i>
+        <span>WINDOWS SECURITY</span><i>✳</i>
+        <span>SOAR</span><i>✳</i>
+        <span>NETWORK ANALYSIS</span>
+      </div>
+
+      <!-- ============================================================= -->
+      <!-- 01 / ABOUT SECTION                                            -->
+      <!-- ============================================================= -->
+      <section class="section about-section" id="about">
+        <div class="section-label"><span>01 / ABOUT</span><span class="label-line"></span></div>
+        <div class="about-layout">
+          <div>
+            <p class="section-eyebrow">A curious mind. A practical approach.</p>
+            <h2>Learning security by<br><span class="muted">building and testing.</span></h2>
+          </div>
+          <div class="about-content" id="about-content">
+            <p>I'm a BSc Cyber Security graduate interested in SOC operations, security monitoring, and incident
+              response. I enjoy building hands-on home labs to understand how security events are detected,
+              investigated, and handled.</p>
+            <p>I've completed 250+ TryHackMe rooms and CTFs, gaining practical exposure to SIEM analysis, threat
+              intelligence, network security, and security automation. I focus on learning by building projects, testing
+              workflows, and documenting my results.</p>
+            <p>Alongside cybersecurity, I use AI-assisted development to build applications, troubleshoot code, and
+              prototype tools. I'm looking for an opportunity to apply my skills, contribute to a team, and continue
+              growing as a cybersecurity professional.</p>
+            <div class="skill-tags" id="about-tags">
+              <span>Splunk</span>
+              <span>Wazuh</span>
+              <span>Tines</span>
+              <span>Windows / AD</span>
+              <span>Linux</span>
+              <span>Python</span>
+              <span>Nmap</span>
+              <span>Wireshark</span>
+              <span>Jira</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================= -->
+      <!-- 02 / SKILLS & TOOLBOX SECTION                                 -->
+      <!-- Content populated from portfolio-data.js                     -->
+      <!-- ============================================================= -->
+      <section class="section skills-section" id="skills">
+        <div class="section-label"><span>02 / SKILLS</span><span class="label-line"></span></div>
+        <div class="section-heading skills-heading">
+          <div>
+            <p class="section-eyebrow">A toolkit built through practice.</p>
+            <h2>Skills & <span class="muted">toolbox</span></h2>
+          </div>
+          <span class="skills-side-note">FILTER BY FOCUS <span aria-hidden="true">↘</span></span>
+        </div>
+        <p class="skills-intro">Every tool here was learned the hard way: broken configurations, failed installs, and alerts that made no sense
+          until I traced them back to the cause. That is where the real learning happened.</p>
+
+        <div class="skill-filters" role="group" aria-label="Filter skills by category">
+          <button type="button" class="skill-filter is-active" data-skill-filter="all" aria-pressed="true">All skills
+            <span>30</span></button>
+          <button type="button" class="skill-filter" data-skill-filter="soc" aria-pressed="false">SOC & SIEM</button>
+          <button type="button" class="skill-filter" data-skill-filter="automation"
+            aria-pressed="false">Automation</button>
+          <button type="button" class="skill-filter" data-skill-filter="network" aria-pressed="false">Network &
+            threat</button>
+          <button type="button" class="skill-filter" data-skill-filter="systems" aria-pressed="false">Systems &
+            cloud</button>
+          <button type="button" class="skill-filter" data-skill-filter="development" aria-pressed="false">AI &
+            Development</button>
+        </div>
+
+        <!-- Dynamic Skills Grid -->
+        <p id="skills-status" class="sr-only" role="status" aria-live="polite"></p>
+        <div class="skills-grid" id="skills-grid"></div>
+
+        <div class="skills-footer">
+          <span class="skills-footer-mark">✳</span>
+          <p>I started with no shortcuts and no guide, just persistence. Each lab I finished made the next one less intimidating.</p>
+        </div>
+      </section>
+
+      <!-- ============================================================= -->
+      <!-- 03 / SELECTED WORK (PROJECTS)                                 -->
+      <!-- Content populated from portfolio-data.js                     -->
+      <!-- ============================================================= -->
+      <section class="section projects-section" id="projects">
+        <div class="section-label"><span>03 / SELECTED WORK</span><span class="label-line"></span></div>
+        <div class="section-heading">
+          <div>
+            <p class="section-eyebrow">Built in the lab, documented for real-world learning.</p>
+            <h2>Projects & <span class="muted">portfolio</span></h2>
+            <p class="projects-intro">Each project began with something I could not do yet. I kept building, breaking, and fixing it until it worked,
+              and wrote down what I learned along the way.</p>
+          </div>
+          <a class="text-link desktop-link" href="https://github.com/bot0024" target="_blank" rel="noreferrer">View
+            GitHub <span>↗</span></a>
+        </div>
+
+        <!-- Dynamic Projects Grid -->
+        <div class="project-grid" id="project-grid"></div>
+
+      </section>
+
+      <!-- ============================================================= -->
+      <!-- 04 / BLOG & MEDIUM WRITING                                       -->
+      <!-- Content populated from portfolio-data.js                     -->
+      <!-- ============================================================= -->
+      <section class="section blog-section" id="blog">
+        <div class="section-label"><span>04 / BLOG & MEDIUM WRITING</span><span class="label-line"></span></div>
+        <div class="section-heading">
+          <div>
+            <p class="section-eyebrow">Published write-ups, walkthroughs, and lessons from the lab.</p>
+            <h2>Blog & <span class="muted">articles</span></h2>
+          </div>
+          <span class="section-side-note">MEDIUM PUBLICATIONS <span aria-hidden="true">↗</span></span>
+        </div>
+        <p class="blog-intro">Browse my Medium articles on threat intelligence, phishing analysis, cybersecurity learning, and TryHackMe walkthroughs. Articles rotate automatically, or use the controls to browse the full collection.</p>
+
+        <!-- Dynamic Blog Grid -->
+        <div class="blog-grid" id="blog-grid"></div>
+
+      </section>
+
+      <!-- ============================================================= -->
+      <!-- 05 / ACHIEVEMENTS & MILESTONES                                -->
+      <!-- Content populated from portfolio-data.js                     -->
+      <!-- ============================================================= -->
+      <section class="section achievements-section" id="achievements">
+        <div class="section-label"><span>05 / ACHIEVEMENTS</span><span class="label-line"></span></div>
+        <div class="section-heading">
+          <div>
+            <p class="section-eyebrow">Small wins, measurable progress.</p>
+            <h2>Achievements & <span class="muted">milestones</span></h2>
+          </div>
+        </div>
+
+        <!-- Dynamic Achievements Grid -->
+        <div class="achievements-grid" id="achievements-grid"></div>
+
+        <p class="disclaimer">None of these came easy. Each badge, certificate, and room is proof of late nights, repeated attempts,
+          and a refusal to quit when things got hard.</p>
+      </section>
+
+      <!-- ============================================================= -->
+      <!-- 06 / EXPERIENCE & PRACTICE                                    -->
+      <!-- Content populated from portfolio-data.js                     -->
+      <!-- ============================================================= -->
+      <section class="section experience-section" id="experience">
+        <div class="section-label"><span>06 / EXPERIENCE</span><span class="label-line"></span></div>
+        <div class="section-heading">
+          <div>
+            <p class="section-eyebrow">Practical work, continuous improvement.</p>
+            <h2>Experience & <span class="muted">practice</span></h2>
+          </div>
+        </div>
+
+        <!-- Dynamic Experience List -->
+        <div class="experience-list" id="experience-list"></div>
+
+        <p class="disclaimer">Every step so far, from my first TryHackMe room to my internship, has taught me the same lesson: consistency beats talent.</p>
+      </section>
+
+      <!-- ============================================================= -->
+      <!-- 07 / EDUCATION & LEARNING                                     -->
+      <!-- Content populated from portfolio-data.js                     -->
+      <!-- ============================================================= -->
+      <section class="section education-section" id="education">
+        <div class="section-label"><span>07 / EDUCATION</span><span class="label-line"></span></div>
+        <div class="education-layout">
+          <div>
+            <p class="section-eyebrow">The foundation behind the practice.</p>
+            <h2>Education & <span class="muted">learning</span></h2>
+          </div>
+
+          <!-- Dynamic Education Cards -->
+          <div class="education-cards" id="education-cards"></div>
+        </div>
+      </section>
+
+      <!-- ============================================================= -->
+      <!-- 08 / RESUME DOWNLOAD & PREVIEW                                -->
+      <!-- ============================================================= -->
+      <section class="section resume-section" id="resume">
+        <div class="section-label"><span>08 / RESUME</span><span class="label-line"></span></div>
+        <div class="resume-layout">
+          <div class="resume-copy" data-reveal>
+            <p class="section-eyebrow">A quick, printable introduction.</p>
+            <h2>My resume,<br><span class="muted">one click away.</span></h2>
+            <p id="resume-copy">Get the PDF version with my cybersecurity background, internship experience, technical skills, education,
+              and selected projects.</p>
+
+            <div class="resume-actions">
+              <a class="button button-primary resume-download" href="assets/Dip-Nalawade-Resume.pdf"
+                download="Dip-Nalawade-Resume.pdf">
+                <span class="download-symbol" aria-hidden="true">↓</span> Download resume PDF <span
+                  class="button-arrow">↗</span>
+              </a>
+              <a class="text-link resume-preview-link" href="assets/Dip-Nalawade-Resume.pdf" target="_blank"
+                rel="noreferrer">
+                Preview in browser <span>↗</span>
+              </a>
+            </div>
+            <p class="resume-note"><span class="resume-note-dot"></span> PDF document · Downloads directly from this
+              portfolio</p>
+          </div>
+
+          <div class="resume-preview-card" data-reveal aria-hidden="true">
+            <div class="resume-paper">
+              <div class="paper-topline">
+                <span>DN / CV</span>
+                <span>CYBERSECURITY</span>
+              </div>
+              <h3>DIP NALAWADE</h3>
+              <p class="paper-role">SOC OPERATIONS · SECURITY MONITORING</p>
+              <div class="paper-rule"></div>
+              <div class="paper-section">
+                <span>01</span>
+                <div><b>PROFILE</b><i></i><i class="short"></i></div>
+              </div>
+              <div class="paper-section">
+                <span>02</span>
+                <div><b>TECHNICAL SKILLS</b>
+                  <div class="paper-tags"><i></i><i></i><i></i><i></i></div>
+                </div>
+              </div>
+              <div class="paper-section">
+                <span>03</span>
+                <div><b>PROJECTS</b><i></i><i></i><i class="short"></i></div>
+              </div>
+              <div class="paper-section">
+                <span>04</span>
+                <div><b>EXPERIENCE & EDUCATION</b><i></i><i class="short"></i></div>
+              </div>
+              <div class="paper-footer">
+                <span>dip-nalawade</span>
+                <span>PDF ↘</span>
+              </div>
+            </div>
+            <span class="resume-stamp">READY TO DOWNLOAD <span>↘</span></span>
+            <div class="resume-orbit orbit-a"></div>
+            <div class="resume-orbit orbit-b"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================= -->
+      <!-- 09 / CONTACT SECTION                                          -->
+      <!-- ============================================================= -->
+      <section class="contact-section" id="contact">
+        <div class="contact-glow"></div>
+        <div class="section-label"><span>09 / CONTACT</span><span class="label-line"></span></div>
+        <div class="contact-layout">
+          <div class="contact-heading-wrap" data-headline-reveal>
+            <p class="contact-pretitle"><span class="contact-pretitle-dot" aria-hidden="true"></span> A MORE SECURE
+              FUTURE STARTS HERE</p>
+            <h2 class="contact-headline" aria-label="Let's make security stronger.">
+              <span class="headline-line"><span class="headline-word">Let's make</span></span>
+              <span class="headline-line"><span class="headline-word">security <span
+                    class="headline-blue">stronger.</span></span></span>
+            </h2>
+            <div class="headline-underline" aria-hidden="true"><span></span></div>
+            <p class="contact-copy" id="contact-copy">I'm open to entry-level opportunities in SOC operations, cybersecurity, and IT
+              support. I'm eager to apply my hands-on lab experience, contribute to a team, and continue developing my
+              technical skills.</p>
+            <p class="contact-signoff"><span>DETECT</span><i></i><span>INVESTIGATE</span><i></i><span>RESPOND</span></p>
+          </div>
+
+          <div class="contact-panel">
+            <span class="contact-label">START A CONVERSATION</span>
+            <a class="contact-email" href="mailto:dipnalawade24@gmail.com">dipnalawade24@gmail.com <span>↗</span></a>
+            <div class="contact-divider"></div>
+            <div class="social-row">
+              <a href="https://www.linkedin.com/in/dip-nalawade/" target="_blank" rel="noreferrer">LinkedIn
+                <span>↗</span></a>
+              <a href="https://github.com/bot0024" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+              <button id="copy-email" type="button" data-email="dipnalawade24@gmail.com">Copy email
+                <span>⧉</span></button>
+            </div>
+            <p class="copy-feedback" aria-live="polite"></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =============================================================== -->
+    <!-- FOOTER                                                          -->
+    <!-- =============================================================== -->
+    <footer class="footer">
+      <a class="brand" href="#home">
+        <span class="brand-mark">D<span>.</span></span>
+        <span>DIP NALAWADE</span>
+      </a>
+      <p>Built with curiosity, experiments, and a security-first mindset.</p>
+      <a href="#home" class="back-top">BACK TO TOP ↑</a>
+      <span class="copyright">© <span id="year"></span> Dip Nalawade</span>
+    </footer>
+  </div>
+
+  <!-- ================================================================= -->
+  <!-- MODAL: BLOG / FIELD NOTE PREVIEW DIALOG                           -->
+  <!-- ================================================================= -->
+  <dialog class="blog-dialog" id="blog-dialog" aria-labelledby="blog-dialog-title">
+    <div class="blog-dialog-inner">
+      <div class="blog-dialog-top">
+        <span class="blog-dialog-kicker">FIELD NOTE PREVIEW</span>
+        <button type="button" class="dialog-close" aria-label="Close preview">×</button>
+      </div>
+      <p class="blog-dialog-category" id="blog-dialog-category"></p>
+      <h2 id="blog-dialog-title">Field note title</h2>
+      <div class="dialog-blue-rule"></div>
+      <div class="blog-dialog-body" id="blog-dialog-body"></div>
+      <div class="blog-dialog-footer">
+        <span>PERSONAL LAB NOTES · PREVIEW</span>
+        <button type="button" class="dialog-done">Close preview <span>↗</span></button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Configuration Data & Application Scripts -->
+  <script src="portfolio-data.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

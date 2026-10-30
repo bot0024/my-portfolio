@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" role="img" aria-label="Docker icon">
+  <rect x="1" y="1" width="34" height="34" rx="7" fill="#eef4ff" stroke="#c9d8f5"/>
+  <g fill="none" stroke="#315fc5" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="9" width="22" height="18" rx="2"/><path d="M7 15h22M13 9v6m6-6v6m6-6v6M12 21h3m4 0h3"/></g>
+  <title>Docker</title>
+</svg>

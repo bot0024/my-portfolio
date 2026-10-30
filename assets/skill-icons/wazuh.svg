@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" role="img" aria-label="Wazuh icon">
+  <rect x="1" y="1" width="34" height="34" rx="7" fill="#eef4ff" stroke="#c9d8f5"/>
+  <g fill="none" stroke="#315fc5" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 28 10v7c0 6-4 10-10 13C12 27 8 23 8 17v-7z"/><path d="m13 18 3 3 7-8"/></g>
+  <title>Wazuh</title>
+</svg>

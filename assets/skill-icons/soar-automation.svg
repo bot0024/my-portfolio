@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" role="img" aria-label="SOAR Automation icon">
+  <rect x="1" y="1" width="34" height="34" rx="7" fill="#eef4ff" stroke="#c9d8f5"/>
+  <g fill="none" stroke="#315fc5" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="8" height="7" rx="2"/><rect x="21" y="21" width="8" height="7" rx="2"/><path d="M15 10h5a3 3 0 0 1 3 3v8M21 25h-5a3 3 0 0 1-3-3v-8"/></g>
+  <title>SOAR Automation</title>
+</svg>

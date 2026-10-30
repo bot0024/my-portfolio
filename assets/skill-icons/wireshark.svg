@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" role="img" aria-label="Wireshark icon">
+  <rect x="1" y="1" width="34" height="34" rx="7" fill="#eef4ff" stroke="#c9d8f5"/>
+  <g fill="none" stroke="#315fc5" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M7 10h22M7 16h16M7 22h19M7 28h12"/><circle cx="27" cy="16" r="2"/></g>
+  <title>Wireshark</title>
+</svg>
